@@ -1,0 +1,25 @@
+/*
+ 1. Print sum of 1 to n numbers.
+*/
+
+#include <stdio.h>
+
+int main() {
+  int n, i, sum = 0;
+
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
+
+  if (n < 1) {
+    printf("Please enter a positive integer.\n");
+    return 1;
+  }
+
+  for (i = 1; i <= n; i++) {
+    sum += i;
+  }
+
+  printf("Sum of integers from 1 to %d is = %d\n", n, sum);
+
+  return 0;
+}
