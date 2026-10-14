@@ -1,0 +1,28 @@
+/* Check whether the given number is perfect or not */
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i = 1, sum = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    while (i <= n / 2)
+    {
+        if (n % i == 0)
+        {
+            sum = sum + i;
+        }
+
+        i++;
+    }
+
+    if (sum == n && n > 0)
+        printf("Perfect number");
+    else
+        printf("Not a perfect number");
+
+    return 0;
+}
