@@ -5,38 +5,30 @@
 int main()
 {
     int a[100], n, i, count = 0;
-    int sum = 0;
-    float avg;
+    float sum = 0, average;
 
-    printf("Enter the number of elements: ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    printf("Enter array elements:\n");
-
+    printf("Enter %d numbers:\n", n);
     for (i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
         sum = sum + a[i];
     }
 
-    if (n <= 0 || n > 100)
-    {
-        printf("Invalid number of elements.");
-        return 0;
-    }
-
-    avg = (float)sum / n;
+    average = sum / n;
 
     for (i = 0; i < n; i++)
     {
-        if (a[i] > avg)
+        if (a[i] > average)
         {
             count++;
         }
     }
 
-    printf("Average = %.2f\n", avg);
-    printf("Numbers greater than average = %d", count);
+    printf("Average = %.2f\n", average);
+    printf("Numbers greater than average = %d\n", count);
 
     return 0;
 }
