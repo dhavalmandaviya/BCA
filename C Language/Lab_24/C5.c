@@ -12,8 +12,7 @@ Missing numbers: 3 6 9
 
 int main()
 {
-    int a[100], n, i, j;
-    int found, max = 0;
+    int a[100], n, i, j,c;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -29,32 +28,17 @@ int main()
     for (i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
-
-        if (a[i] > max)
-        {
-            max = a[i];
-        }
     }
 
     printf("Missing numbers: ");
 
-    for (i = 1; i <= max; i++)
+    for (i = 1; i < n; i++)
     {
-        found = 0;
-
-        for (j = 0; j < n; j++)
-        {
-            if (a[j] == i)
-            {
-                found = 1;
-                break;
-            }
+        while(c<a[i]) {
+            printf("%d",c);
+            c++;
         }
-
-        if (found == 0)
-        {
-            printf("%d ", i);
-        }
+        c++;
     }
 
     return 0;
