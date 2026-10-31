@@ -2,4 +2,5 @@
 Darshan University - Lab code for students by Dhaval Mandaviya.
 <br><br>
 <b>Language list:-</b>
-1. C Programming - I
+1. C Programming - I 
+Detail :- From Lab 8 to Lab 30 codes available.
